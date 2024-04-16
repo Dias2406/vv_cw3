@@ -1,0 +1,13 @@
+#0
+leetcode_completions/15.All_one_Data_Structure.c:40: error: Null Dereference
+  pointer `obj` last assigned on line 39 could be null and is dereferenced at line 40, column 17.
+  38. AllOne* allOneCreate() {
+  39.     AllOne *obj = malloc(sizeof(AllOne));
+  40.     obj->head = obj->tail = NULL;
+                      ^
+  41.     obj->keyMap = calloc(10000, sizeof(KeyNode*));
+  42.     return obj;
+
+Found 1 issue
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 1

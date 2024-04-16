@@ -1,0 +1,13 @@
+#0
+leetcode_completions/5.Max_Points_on_a_Line.c:57: error: Null Dereference
+  pointer `slopes` last assigned on line 18 could be null and is dereferenced at line 57, column 17.
+  55.             }
+  56.             if (!found) {
+  57.                 slopes[slopesSize].dy = dy;
+                      ^
+  58.                 slopes[slopesSize].dx = dx;
+  59.                 slopes[slopesSize].count = 1;
+
+Found 1 issue
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 1

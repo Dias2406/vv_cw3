@@ -1,0 +1,34 @@
+#0
+leetcode_completions/11.Text_Justification.c:39: error: Dead Store
+  The value written to &cursor (type int) is never used.
+  37.                 cursor = strlen(words[start]);
+  38.                 memset(line + cursor, ' ', spacesNeeded);
+  39.                 cursor += spacesNeeded;
+                      ^
+  40.             }
+  41. 
+
+#1
+leetcode_completions/11.Text_Justification.c:36: error: Null Dereference
+  pointer `line` last assigned on line 17 could be null and is dereferenced by call to `memcpy()` at line 36, column 17.
+  34.                 }
+  35.             } else {
+  36.                 memcpy(line, words[start], strlen(words[start]));
+                      ^
+  37.                 cursor = strlen(words[start]);
+  38.                 memset(line + cursor, ' ', spacesNeeded);
+
+#2
+leetcode_completions/11.Text_Justification.c:43: error: Null Dereference
+  pointer `result` last assigned on line 10 could be null and is dereferenced at line 43, column 13.
+  41. 
+  42.             line[maxWidth] = '\0';
+  43.             result[totalLines++] = line;
+                  ^
+  44.             start = i;
+  45.             currentLineLength = 0;
+
+Found 3 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 2
+              Dead Store(DEAD_STORE): 1

@@ -1,0 +1,92 @@
+[34351][      debug] Loading models took 103ms
+[34351][environment] CWD = /workspaces/vv_cw3
+[34351][environment] No .inferconfig file found
+[34351][environment] Project root = /workspaces/vv_cw3
+[34351][environment] INFER_ARGS =   @/tmp/args.tmp.3f3430
+[34351][environment] command line arguments:   infer run -- gcc -c
+[34351][environment]                           ./leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c
+[34351][environment] Available memory at startup: 5324 MB
+[34351][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[34351][environment] Scheduler: file
+[34351][environment] Cores used: 1
+[34351][environment] Infer version v1.1.0
+[34351][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[34351][environment] 
+[34351][   progress] Capturing in make/cc mode...
+[34351][      debug] 
+[34351][      debug] *** Beginning capture of file /workspaces/vv_cw3/leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c ***
+[34351][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[34351][      debug] Elapsed: 64.84ms.
+[34351][      debug] GC stats for capture:
+[34351][      debug]   minor_words: 1.5053e+06
+[34351][      debug]   promoted_words: 301219
+[34351][      debug]   major_words: 316480
+[34351][      debug]   minor_collections: 3
+[34351][      debug]   major_collections: 0
+[34351][      debug]   compactions: 0
+[34351][      debug]   top_heap_words: 1006592
+[34351][      debug]   
+[34351][   progress] Found 1 source file to analyze in /workspaces/vv_cw3/infer-out
+[34351][   progress] leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c starting
+[34351][   progress] leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c DONE
+[34351][      debug] Backend stats:
+[34351][      debug]   summary_file_try_load= 34
+[34351][      debug]   summary_read_from_disk= 0
+[34351][      debug]   summary_cache_hits= 45 (56%)
+[34351][      debug]   summary_cache_misses= 34
+[34351][      debug]   ondemand_procs_analyzed= 4
+[34351][      debug]   ondemand_local_cache_hits= 29 (80%)
+[34351][      debug]   ondemand_local_cache_misses= 7
+[34351][      debug]   proc_locker_lock_time_user= 0.00000000
+[34351][      debug]   proc_locker_lock_time_sys= 0.00000000
+[34351][      debug]   proc_locker_lock_time_wall= 0.00000000
+[34351][      debug]   proc_locker_unlock_time_user= 0.00000000
+[34351][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[34351][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[34351][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[34351][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[34351][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[34351][      debug]   restart_scheduler_total_time_user= 0.00000000
+[34351][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[34351][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[34351][      debug]   
+[34351][      debug] GC stats for backend_stats.:
+[34351][      debug]   minor_words: 1.43329e+08
+[34351][      debug]   promoted_words: 637453
+[34351][      debug]   major_words: 659948
+[34351][      debug]   minor_collections: 138
+[34351][      debug]   major_collections: 4
+[34351][      debug]   compactions: 0
+[34351][      debug]   top_heap_words: 1157632
+[34351][      debug]   
+[34351][      debug] Analysis phase finished in 352ms
+[34351][      debug] backend_stats.scheduler_process_analysis_time_user= 0.32013800
+[34351][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.00642000
+[34351][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.35243547
+[34351][      debug] GC stats for analysis_scheduler:
+[34351][      debug]   minor_words: 1.43337e+08
+[34351][      debug]   promoted_words: 637453
+[34351][      debug]   major_words: 660461
+[34351][      debug]   minor_collections: 138
+[34351][      debug]   major_collections: 4
+[34351][      debug]   compactions: 0
+[34351][      debug]   top_heap_words: 1157632
+[34351][      debug]   
+[34351][      debug] GC stats for report:
+[34351][      debug]   minor_words: 50207
+[34351][      debug]   promoted_words: 0
+[34351][      debug]   major_words: 1863
+[34351][      debug]   minor_collections: 0
+[34351][      debug]   major_collections: 0
+[34351][      debug]   compactions: 0
+[34351][      debug]   top_heap_words: 1157632
+[34351][      debug]   
+[34351][      debug] GC stats for main_process_full:
+[34351][      debug]   minor_words: 1.4653e+08
+[34351][      debug]   promoted_words: 1.10415e+06
+[34351][      debug]   major_words: 1.67032e+06
+[34351][      debug]   minor_collections: 145
+[34351][      debug]   major_collections: 6
+[34351][      debug]   compactions: 1
+[34351][      debug]   top_heap_words: 1157632
+[34351][      debug]   

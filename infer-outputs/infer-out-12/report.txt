@@ -1,0 +1,44 @@
+#0
+leetcode_completions/12.Design_Skiplist.c:24: error: Null Dereference
+  pointer `node->forward` last assigned on line 22 could be null and is dereferenced at line 24, column 9.
+  22.     node->forward = (SkipListNode **)malloc(sizeof(SkipListNode *) * level);
+  23.     for (int i = 0; i < level; i++) {
+  24.         node->forward[i] = NULL; // Initialize forward pointers to NULL
+              ^
+  25.     }
+  26.     return node;
+
+#1
+leetcode_completions/12.Design_Skiplist.c:21: error: Null Dereference
+  pointer `node` last assigned on line 20 could be null and is dereferenced at line 21, column 5.
+  19. SkipListNode *createNode(int val, int level) {
+  20.     SkipListNode *node = (SkipListNode *)malloc(sizeof(SkipListNode));
+  21.     node->val = val;
+          ^
+  22.     node->forward = (SkipListNode **)malloc(sizeof(SkipListNode *) * level);
+  23.     for (int i = 0; i < level; i++) {
+
+#2
+leetcode_completions/12.Design_Skiplist.c:32: error: Null Dereference
+  pointer `obj` last assigned on line 31 could be null and is dereferenced at line 32, column 5.
+  30. Skiplist *skiplistCreate() {
+  31.     Skiplist *obj = (Skiplist *)malloc(sizeof(Skiplist));
+  32.     obj->level = 1;
+          ^
+  33.     obj->header = createNode(-1, MAX_LEVEL); // Header node with a very small value
+  34.     return obj;
+
+#3
+leetcode_completions/12.Design_Skiplist.c:65: error: Dead Store
+  The value written to &curr (type SkipListNode*) is never used.
+  63.         update[i] = curr; // Update the array with the node before the insertion point
+  64.     }
+  65.     curr = curr->forward[0]; // Move to the next node in the bottom level
+          ^
+  66.     int newNodeLevel = randomLevel(); // Generate a random level for the new node
+  67.     if (newNodeLevel > obj->level) { // If the new node's level is greater than the Skiplist's level
+
+Found 4 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 3
+              Dead Store(DEAD_STORE): 1

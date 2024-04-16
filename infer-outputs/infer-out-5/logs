@@ -1,0 +1,92 @@
+[32377][      debug] Loading models took 93.549ms
+[32377][environment] CWD = /workspaces/vv_cw3
+[32377][environment] No .inferconfig file found
+[32377][environment] Project root = /workspaces/vv_cw3
+[32377][environment] INFER_ARGS =   @/tmp/args.tmp.41967f
+[32377][environment] command line arguments:   infer run -- gcc -c
+[32377][environment]                           ./leetcode_completions/5.Max_Points_on_a_Line.c
+[32377][environment] Available memory at startup: 5377 MB
+[32377][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[32377][environment] Scheduler: file
+[32377][environment] Cores used: 1
+[32377][environment] Infer version v1.1.0
+[32377][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[32377][environment] 
+[32377][   progress] Capturing in make/cc mode...
+[32377][      debug] 
+[32377][      debug] *** Beginning capture of file /workspaces/vv_cw3/leetcode_completions/5.Max_Points_on_a_Line.c ***
+[32377][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[32377][      debug] Elapsed: 45.733ms.
+[32377][      debug] GC stats for capture:
+[32377][      debug]   minor_words: 1.60776e+06
+[32377][      debug]   promoted_words: 305213
+[32377][      debug]   major_words: 323696
+[32377][      debug]   minor_collections: 3
+[32377][      debug]   major_collections: 0
+[32377][      debug]   compactions: 0
+[32377][      debug]   top_heap_words: 1006592
+[32377][      debug]   
+[32377][   progress] Found 1 source file to analyze in /workspaces/vv_cw3/infer-out
+[32377][   progress] leetcode_completions/5.Max_Points_on_a_Line.c starting
+[32377][   progress] leetcode_completions/5.Max_Points_on_a_Line.c DONE
+[32377][      debug] Backend stats:
+[32377][      debug]   summary_file_try_load= 22
+[32377][      debug]   summary_read_from_disk= 0
+[32377][      debug]   summary_cache_hits= 46 (67%)
+[32377][      debug]   summary_cache_misses= 22
+[32377][      debug]   ondemand_procs_analyzed= 2
+[32377][      debug]   ondemand_local_cache_hits= 21 (84%)
+[32377][      debug]   ondemand_local_cache_misses= 4
+[32377][      debug]   proc_locker_lock_time_user= 0.00000000
+[32377][      debug]   proc_locker_lock_time_sys= 0.00000000
+[32377][      debug]   proc_locker_lock_time_wall= 0.00000000
+[32377][      debug]   proc_locker_unlock_time_user= 0.00000000
+[32377][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[32377][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[32377][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[32377][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[32377][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[32377][      debug]   restart_scheduler_total_time_user= 0.00000000
+[32377][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[32377][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[32377][      debug]   
+[32377][      debug] GC stats for backend_stats.:
+[32377][      debug]   minor_words: 6.21684e+07
+[32377][      debug]   promoted_words: 309140
+[32377][      debug]   major_words: 336342
+[32377][      debug]   minor_collections: 60
+[32377][      debug]   major_collections: 3
+[32377][      debug]   compactions: 0
+[32377][      debug]   top_heap_words: 1157632
+[32377][      debug]   
+[32377][      debug] Analysis phase finished in 124ms
+[32377][      debug] backend_stats.scheduler_process_analysis_time_user= 0.11925300
+[32377][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.00310300
+[32377][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.12428032
+[32377][      debug] GC stats for analysis_scheduler:
+[32377][      debug]   minor_words: 6.21762e+07
+[32377][      debug]   promoted_words: 309140
+[32377][      debug]   major_words: 336855
+[32377][      debug]   minor_collections: 60
+[32377][      debug]   major_collections: 3
+[32377][      debug]   compactions: 0
+[32377][      debug]   top_heap_words: 1157632
+[32377][      debug]   
+[32377][      debug] GC stats for report:
+[32377][      debug]   minor_words: 30319
+[32377][      debug]   promoted_words: 0
+[32377][      debug]   major_words: 3441
+[32377][      debug]   minor_collections: 0
+[32377][      debug]   major_collections: 0
+[32377][      debug]   compactions: 0
+[32377][      debug]   top_heap_words: 1157632
+[32377][      debug]   
+[32377][      debug] GC stats for main_process_full:
+[32377][      debug]   minor_words: 6.54513e+07
+[32377][      debug]   promoted_words: 779830
+[32377][      debug]   major_words: 1.35551e+06
+[32377][      debug]   minor_collections: 67
+[32377][      debug]   major_collections: 5
+[32377][      debug]   compactions: 1
+[32377][      debug]   top_heap_words: 1157632
+[32377][      debug]   

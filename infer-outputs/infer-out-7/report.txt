@@ -1,0 +1,23 @@
+#0
+leetcode_completions/7.Find_Median_from_Data_Stream.c:10: error: Null Dereference
+  pointer `obj` last assigned on line 9 could be null and is dereferenced at line 10, column 5.
+   8. MedianFinder* medianFinderCreate() {
+   9.     MedianFinder* obj = (MedianFinder*)malloc(sizeof(MedianFinder));
+  10.     obj->nums = NULL;
+          ^
+  11.     obj->size = 0;
+  12.     return obj;
+
+#1
+leetcode_completions/7.Find_Median_from_Data_Stream.c:18: error: Null Dereference
+  pointer `obj->nums` last assigned on line 16 could be null and is dereferenced at line 18, column 22.
+  16.     obj->nums = (int*)realloc(obj->nums, (obj->size + 1) * sizeof(int));
+  17.     int i = obj->size - 1;
+  18.     while (i >= 0 && obj->nums[i] > num) {
+                           ^
+  19.         obj->nums[i + 1] = obj->nums[i];
+  20.         i--;
+
+Found 2 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 2

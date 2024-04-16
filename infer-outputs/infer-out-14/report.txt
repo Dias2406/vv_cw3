@@ -1,0 +1,13 @@
+#0
+leetcode_completions/14.Valid_Number.c:31: error: Dead Store
+  The value written to &hasExponent (type _Bool) is never used.
+  29.     if (*p == 'e' || *p == 'E') {
+  30.         if (!hasDigits) return false;
+  31.         hasExponent = true;
+              ^
+  32.         p++;
+  33.         if (*p == '+' || *p == '-') p++;
+
+Found 1 issue
+  Issue Type(ISSUED_TYPE_ID): #
+      Dead Store(DEAD_STORE): 1

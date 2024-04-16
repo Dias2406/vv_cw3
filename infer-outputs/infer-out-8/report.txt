@@ -1,0 +1,34 @@
+#0
+leetcode_completions/8.Design_raph_With_Shortest_Path_Calculator.c:16: error: Null Dereference
+  pointer `graph->adjMatrix` last assigned on line 13 could be null and is dereferenced at line 16, column 9.
+  14.     
+  15.     for (int i = 0; i < n; i++) {
+  16.         graph->adjMatrix[i] = (int*) malloc(n * sizeof(int));
+              ^
+  17.         for (int j = 0; j < n; j++) {
+  18.             graph->adjMatrix[i][j] = (i == j) ? 0 : INT_MAX;
+
+#1
+leetcode_completions/8.Design_raph_With_Shortest_Path_Calculator.c:12: error: Null Dereference
+  pointer `graph` last assigned on line 11 could be null and is dereferenced at line 12, column 5.
+  10. Graph* graphCreate(int n, int** edges, int edgesSize, int* edgesColSize) {
+  11.     Graph* graph = (Graph*) malloc(sizeof(Graph));
+  12.     graph->n = n;
+          ^
+  13.     graph->adjMatrix = (int**) malloc(n * sizeof(int*));
+  14.     
+
+#2
+leetcode_completions/8.Design_raph_With_Shortest_Path_Calculator.c:57: error: Uninitialized Value
+  The value read from visited[_] was never initialized.
+  55. 
+  56.         for (int i = 0; i < n; i++) {
+  57.             if (!visited[i] && distances[i] < minDistance) {
+                       ^
+  58.                 minDistance = distances[i];
+  59.                 u = i;
+
+Found 3 issues
+                Issue Type(ISSUED_TYPE_ID): #
+        Null Dereference(NULL_DEREFERENCE): 2
+  Uninitialized Value(UNINITIALIZED_VALUE): 1

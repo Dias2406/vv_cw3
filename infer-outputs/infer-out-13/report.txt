@@ -1,0 +1,43 @@
+#0
+leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c:20: error: Null Dereference
+  pointer `obj->availableSeats` last assigned on line 17 could be null and is dereferenced at line 20, column 9.
+  18.     memset(obj->nextFreeSeat, 0, n * sizeof(long long));  // initialize all next free seats to 0
+  19.     for (int i = 0; i < n; ++i) {
+  20.         obj->availableSeats[i] = m;  // all seats are initially available
+              ^
+  21.     }
+  22.     return obj;
+
+#1
+leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c:18: error: Null Dereference
+  pointer `obj->nextFreeSeat` last assigned on line 16 could be null and is dereferenced by call to `memset()` at line 18, column 5.
+  16.     obj->nextFreeSeat = (long long*) malloc(n * sizeof(long long));
+  17.     obj->availableSeats = (long long*) malloc(n * sizeof(long long));
+  18.     memset(obj->nextFreeSeat, 0, n * sizeof(long long));  // initialize all next free seats to 0
+          ^
+  19.     for (int i = 0; i < n; ++i) {
+  20.         obj->availableSeats[i] = m;  // all seats are initially available
+
+#2
+leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c:14: error: Null Dereference
+  pointer `obj` last assigned on line 13 could be null and is dereferenced at line 14, column 5.
+  12. BookMyShow* bookMyShowCreate(int n, long long m) {
+  13.     BookMyShow* obj = (BookMyShow*) malloc(sizeof(BookMyShow));
+  14.     obj->n = n;
+          ^
+  15.     obj->m = m;
+  16.     obj->nextFreeSeat = (long long*) malloc(n * sizeof(long long));
+
+#3
+leetcode_completions/13.Booking_Concert_Tickets_in_Groups.c:29: error: Null Dereference
+  pointer `result` last assigned on line 28 could be null and is dereferenced at line 29, column 13.
+  27.         if (obj->availableSeats[r] >= k && obj->m - obj->nextFreeSeat[r] >= k) {  // enough seats available
+  28.             int* result = (int*) malloc(2 * sizeof(int));
+  29.             result[0] = r;
+                  ^
+  30.             result[1] = (int)obj->nextFreeSeat[r];
+  31.             obj->nextFreeSeat[r] += k;  // update next free seat pointer
+
+Found 4 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 4

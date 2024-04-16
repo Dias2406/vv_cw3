@@ -1,0 +1,92 @@
+[33117][      debug] Loading models took 84.408ms
+[33117][environment] CWD = /workspaces/vv_cw3
+[33117][environment] No .inferconfig file found
+[33117][environment] Project root = /workspaces/vv_cw3
+[33117][environment] INFER_ARGS =   @/tmp/args.tmp.762021
+[33117][environment] command line arguments:   infer run -- gcc -c
+[33117][environment]                           ./leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c
+[33117][environment] Available memory at startup: 5381 MB
+[33117][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33117][environment] Scheduler: file
+[33117][environment] Cores used: 1
+[33117][environment] Infer version v1.1.0
+[33117][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[33117][environment] 
+[33117][   progress] Capturing in make/cc mode...
+[33117][      debug] 
+[33117][      debug] *** Beginning capture of file /workspaces/vv_cw3/leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c ***
+[33117][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33117][      debug] Elapsed: 77.762ms.
+[33117][      debug] GC stats for capture:
+[33117][      debug]   minor_words: 1.60776e+06
+[33117][      debug]   promoted_words: 307185
+[33117][      debug]   major_words: 324872
+[33117][      debug]   minor_collections: 3
+[33117][      debug]   major_collections: 0
+[33117][      debug]   compactions: 0
+[33117][      debug]   top_heap_words: 1006592
+[33117][      debug]   
+[33117][   progress] Found 1 source file to analyze in /workspaces/vv_cw3/infer-out
+[33117][   progress] leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c starting
+[33117][   progress] leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c DONE
+[33117][      debug] Backend stats:
+[33117][      debug]   summary_file_try_load= 95
+[33117][      debug]   summary_read_from_disk= 0
+[33117][      debug]   summary_cache_hits= 194 (67%)
+[33117][      debug]   summary_cache_misses= 95
+[33117][      debug]   ondemand_procs_analyzed= 4
+[33117][      debug]   ondemand_local_cache_hits= 114 (94%)
+[33117][      debug]   ondemand_local_cache_misses= 7
+[33117][      debug]   proc_locker_lock_time_user= 0.00000000
+[33117][      debug]   proc_locker_lock_time_sys= 0.00000000
+[33117][      debug]   proc_locker_lock_time_wall= 0.00000000
+[33117][      debug]   proc_locker_unlock_time_user= 0.00000000
+[33117][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[33117][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[33117][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[33117][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[33117][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[33117][      debug]   restart_scheduler_total_time_user= 0.00000000
+[33117][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[33117][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[33117][      debug]   
+[33117][      debug] GC stats for backend_stats.:
+[33117][      debug]   minor_words: 1.56546e+08
+[33117][      debug]   promoted_words: 669135
+[33117][      debug]   major_words: 732914
+[33117][      debug]   minor_collections: 151
+[33117][      debug]   major_collections: 4
+[33117][      debug]   compactions: 0
+[33117][      debug]   top_heap_words: 1157632
+[33117][      debug]   
+[33117][      debug] Analysis phase finished in 437ms
+[33117][      debug] backend_stats.scheduler_process_analysis_time_user= 0.38176100
+[33117][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.00865000
+[33117][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.43710994
+[33117][      debug] GC stats for analysis_scheduler:
+[33117][      debug]   minor_words: 1.56554e+08
+[33117][      debug]   promoted_words: 669135
+[33117][      debug]   major_words: 733427
+[33117][      debug]   minor_collections: 151
+[33117][      debug]   major_collections: 4
+[33117][      debug]   compactions: 0
+[33117][      debug]   top_heap_words: 1157632
+[33117][      debug]   
+[33117][      debug] GC stats for report:
+[33117][      debug]   minor_words: 36622
+[33117][      debug]   promoted_words: 0
+[33117][      debug]   major_words: 312
+[33117][      debug]   minor_collections: 0
+[33117][      debug]   major_collections: 0
+[33117][      debug]   compactions: 0
+[33117][      debug]   top_heap_words: 1157632
+[33117][      debug]   
+[33117][      debug] GC stats for main_process_full:
+[33117][      debug]   minor_words: 1.59835e+08
+[33117][      debug]   promoted_words: 1.1418e+06
+[33117][      debug]   major_words: 1.75013e+06
+[33117][      debug]   minor_collections: 158
+[33117][      debug]   major_collections: 6
+[33117][      debug]   compactions: 1
+[33117][      debug]   top_heap_words: 1157632
+[33117][      debug]   

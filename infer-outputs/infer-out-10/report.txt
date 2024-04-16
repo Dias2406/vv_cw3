@@ -1,0 +1,53 @@
+#0
+leetcode_completions/10.Design_Movie_Rental_System.c:37: error: Null Dereference
+  pointer `obj->entries` last assigned on line 30 could be null and is dereferenced at line 37, column 9.
+  35. 
+  36.     for (int i = 0; i < entriesSize; i++) {
+  37.         obj->entries[i] = (MovieEntry){entries[i][0], entries[i][1], entries[i][2], 0};
+              ^
+  38.         obj->unrentedMovies[i] = &obj->entries[i];
+  39.     }
+
+#1
+leetcode_completions/10.Design_Movie_Rental_System.c:29: error: Null Dereference
+  pointer `obj` last assigned on line 28 could be null and is dereferenced at line 29, column 5.
+  27. MovieRentingSystem* movieRentingSystemCreate(int n, int** entries, int entriesSize, int* entriesColSize) {
+  28.     MovieRentingSystem* obj = malloc(sizeof(MovieRentingSystem));
+  29.     obj->numEntries = entriesSize;
+          ^
+  30.     obj->entries = malloc(sizeof(MovieEntry) * entriesSize);
+  31.     obj->unrentedMovies = malloc(sizeof(MovieEntry*) * entriesSize);
+
+#2
+leetcode_completions/10.Design_Movie_Rental_System.c:93: error: Null Dereference
+  pointer `*report[i]` last assigned on line 92 could be null and is dereferenced at line 93, column 9.
+  91.     for (int i = 0; i < limit; i++) {
+  92.         report[i] = malloc(sizeof(int) * 2);
+  93.         report[i][0] = obj->rentedMovies[i]->shop;
+              ^
+  94.         report[i][1] = obj->rentedMovies[i]->movie;
+  95.         (*retColSize)[i] = 2;
+
+#3
+leetcode_completions/10.Design_Movie_Rental_System.c:95: error: Null Dereference
+  pointer `*retColSize` last assigned on line 89 could be null and is dereferenced at line 95, column 9.
+  93.         report[i][0] = obj->rentedMovies[i]->shop;
+  94.         report[i][1] = obj->rentedMovies[i]->movie;
+  95.         (*retColSize)[i] = 2;
+              ^
+  96.     }
+  97.     return report;
+
+#4
+leetcode_completions/10.Design_Movie_Rental_System.c:92: error: Null Dereference
+  pointer `report` last assigned on line 88 could be null and is dereferenced at line 92, column 9.
+  90.     *retSize = limit;
+  91.     for (int i = 0; i < limit; i++) {
+  92.         report[i] = malloc(sizeof(int) * 2);
+              ^
+  93.         report[i][0] = obj->rentedMovies[i]->shop;
+  94.         report[i][1] = obj->rentedMovies[i]->movie;
+
+Found 5 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 5

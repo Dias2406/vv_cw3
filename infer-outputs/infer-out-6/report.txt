@@ -1,0 +1,23 @@
+#0
+leetcode_completions/6.N-Queens.c:34: error: Null Dereference
+  pointer `solution` last assigned on line 32 could be null and is dereferenced at line 34, column 13.
+  32.         char **solution = malloc(n * sizeof(char *));
+  33.         for (i = 0; i < n; i++) {
+  34.             solution[i] = strdup(board[i]); // Copy solution
+                  ^
+  35.         }
+  36.         (*solutions)[*returnSize] = solution;
+
+#1
+leetcode_completions/6.N-Queens.c:64: error: Null Dereference
+  pointer `board` last assigned on line 61 could be null and is dereferenced at line 64, column 9.
+  62.     int i, j;
+  63.     for (i = 0; i < n; i++) {
+  64.         board[i] = malloc((n + 1) * sizeof(char));
+              ^
+  65.         for (j = 0; j < n; j++)
+  66.             board[i][j] = '.';
+
+Found 2 issues
+          Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULL_DEREFERENCE): 2

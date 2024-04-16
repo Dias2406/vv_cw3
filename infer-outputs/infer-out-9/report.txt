@@ -1,0 +1,43 @@
+#0
+leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c:14: error: Uninitialized Value
+  The value read from operators[_] was never initialized.
+  12.             int num = s[i] - '0';
+  13.             // Process the multiplication immediately if the top of the operators stack is '*'
+  14.             while (opTop > 0 && operators[opTop - 1] == '*') {
+                                      ^
+  15.                 num = values[--top] * num;
+  16.                 --opTop;  // Pop the operator stack
+
+#1
+leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c:15: error: Uninitialized Value
+  The value read from values[_] was never initialized.
+  13.             // Process the multiplication immediately if the top of the operators stack is '*'
+  14.             while (opTop > 0 && operators[opTop - 1] == '*') {
+  15.                 num = values[--top] * num;
+                      ^
+  16.                 --opTop;  // Pop the operator stack
+  17.             }
+
+#2
+leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c:25: error: Uninitialized Value
+  The value read from values[_] was never initialized.
+  23.     
+  24.     // Now process all additions, which is straightforward as all multiplications have been resolved
+  25.     int total = values[0];
+          ^
+  26.     for (int i = 1; i < top; i++) {
+  27.         total += values[i];  // Simply add all remaining numbers
+
+#3
+leetcode_completions/9.The_Score_of_Students_Solving_Math_Expression.c:27: error: Uninitialized Value
+  The value read from values[_] was never initialized.
+  25.     int total = values[0];
+  26.     for (int i = 1; i < top; i++) {
+  27.         total += values[i];  // Simply add all remaining numbers
+              ^
+  28.     }
+  29.     
+
+Found 4 issues
+                Issue Type(ISSUED_TYPE_ID): #
+  Uninitialized Value(UNINITIALIZED_VALUE): 4
